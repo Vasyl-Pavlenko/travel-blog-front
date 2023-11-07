@@ -1,0 +1,32 @@
+.Loader {
+  margin: 100px auto 0;
+  width: 50px;
+  height: 50px;
+  border: 8px solid #3498db;
+  border-top-color: #e74c3c;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.Loader--dark {
+  border-color: #333;
+  border-top-color: #e74c3c;
+}
+
+@media (min-width: 768px) {
+  .Loader {
+    width: 80px;
+    height: 80px;
+    border-width: 12px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
